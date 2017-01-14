@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Item 2-->
+        <!--Profile-->
         <scene sceneID="S6r-l5-vh3">
             <objects>
-                <viewController id="cdf-Fl-MH3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TMUserProfile" id="cdf-Fl-MH3" customClass="TMUserProfile" customModule="TrulyMadlyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sL8-Tz-na5"/>
                         <viewControllerLayoutGuide type="bottom" id="COs-2v-szB"/>
@@ -174,16 +174,16 @@
                             <constraint firstItem="COs-2v-szB" firstAttribute="top" secondItem="6IV-96-JXn" secondAttribute="bottom" constant="8" symbolic="YES" id="pog-Aj-qJu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="r3Q-AR-plQ"/>
+                    <navigationItem key="navigationItem" title="Profile" id="0z8-eA-k2J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsT-Fn-bij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064.8000000000002" y="472.71364317841085"/>
+            <point key="canvasLocation" x="3004" y="472.71364317841085"/>
         </scene>
-        <!--Item 1-->
+        <!--Match Found-->
         <scene sceneID="RZi-hr-zmW">
             <objects>
-                <viewController id="s4B-WM-R8z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TMMatchesVC" id="s4B-WM-R8z" customClass="TMMatchesVC" customModule="TrulyMadlyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LOo-6N-uRj"/>
                         <viewControllerLayoutGuide type="bottom" id="udD-Xt-arW"/>
@@ -192,9 +192,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZXx-iP-1YM">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZXx-iP-1YM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.89614206607245184" blue="0.90466204676593232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XXh-cs-t30">
                                     <size key="itemSize" width="334" height="483"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -202,8 +202,8 @@
                                     <inset key="sectionInset" minX="20" minY="64" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IbE-ny-U3T">
-                                        <rect key="frame" x="20" y="71" width="334" height="483"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TMMatchesViewCell" id="IbE-ny-U3T" customClass="TMMatchesViewCell" customModule="TrulyMadlyDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="39" width="334" height="483"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="334" height="483"/>
@@ -213,7 +213,7 @@
                                                     <rect key="frame" x="8" y="8" width="318" height="200"/>
                                                     <color key="backgroundColor" red="0.58771448168237894" green="0.44552295122175434" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="200" id="BTj-hR-4cb"/>
+                                                        <constraint firstAttribute="height" constant="200" id="Ygv-PX-rSo"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmO-cG-62s">
@@ -224,14 +224,19 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="1" green="0.49777463584509396" blue="0.56572811773028109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="DmO-cG-62s" firstAttribute="top" secondItem="GLY-we-KRQ" secondAttribute="bottom" constant="17" id="7z7-0K-Fz3"/>
-                                            <constraint firstAttribute="trailing" secondItem="DmO-cG-62s" secondAttribute="trailing" id="KiX-tE-qWL"/>
-                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="leading" secondItem="DmO-cG-62s" secondAttribute="leading" id="RWV-M0-3yl"/>
-                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="trailing" secondItem="IbE-ny-U3T" secondAttribute="trailingMargin" id="X4c-uF-wh2"/>
-                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="leading" secondItem="IbE-ny-U3T" secondAttribute="leadingMargin" id="eop-PV-z7j"/>
-                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="top" secondItem="IbE-ny-U3T" secondAttribute="topMargin" id="xL1-UN-ose"/>
+                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="leading" secondItem="DmO-cG-62s" secondAttribute="leading" id="6jr-J0-yGh"/>
+                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="trailing" secondItem="IbE-ny-U3T" secondAttribute="trailingMargin" id="RpI-fZ-Nn9"/>
+                                            <constraint firstItem="DmO-cG-62s" firstAttribute="top" secondItem="GLY-we-KRQ" secondAttribute="bottom" constant="17" id="WSI-fC-UDU"/>
+                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="top" secondItem="IbE-ny-U3T" secondAttribute="topMargin" id="dZt-7L-gzE"/>
+                                            <constraint firstAttribute="trailing" secondItem="DmO-cG-62s" secondAttribute="trailing" id="vuf-sY-Nnc"/>
+                                            <constraint firstItem="GLY-we-KRQ" firstAttribute="leading" secondItem="IbE-ny-U3T" secondAttribute="leadingMargin" id="xsp-Ra-Dg7"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="UserImageView" destination="GLY-we-KRQ" id="Rea-kk-eee"/>
+                                            <outlet property="UserName" destination="DmO-cG-62s" id="YiN-HD-jiU"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -244,11 +249,14 @@
                             <constraint firstItem="ZXx-iP-1YM" firstAttribute="top" secondItem="kTf-XO-c5L" secondAttribute="top" id="oRW-Sd-jzw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="WLL-Hp-GVi"/>
+                    <navigationItem key="navigationItem" title="Match Found" id="Npu-oa-ONW"/>
+                    <connections>
+                        <outlet property="matchCollectionView" destination="ZXx-iP-1YM" id="dag-QH-Asg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8p-DY-cLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064.8000000000002" y="-182.15892053973016"/>
+            <point key="canvasLocation" x="3004" y="-182.15892053973016"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="48d-N5-M3Q">
@@ -260,13 +268,51 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="s4B-WM-R8z" kind="relationship" relationship="viewControllers" id="pu6-Bv-yeB"/>
-                        <segue destination="cdf-Fl-MH3" kind="relationship" relationship="viewControllers" id="E2T-38-GGc"/>
+                        <segue destination="tzP-kw-wDq" kind="relationship" relationship="viewControllers" id="pu6-Bv-yeB"/>
+                        <segue destination="JQ5-uI-oNa" kind="relationship" relationship="viewControllers" id="E2T-38-GGc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvx-uv-1dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1113" y="146"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="jSF-KD-kcM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tzP-kw-wDq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="WLL-Hp-GVi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r2b-v7-tPL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s4B-WM-R8z" kind="relationship" relationship="rootViewController" id="cK1-OE-7zc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwu-af-VVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064.8000000000002" y="-182.15892053973016"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="h8T-An-coX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JQ5-uI-oNa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="r3Q-AR-plQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xF2-pg-rxn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cdf-Fl-MH3" kind="relationship" relationship="rootViewController" id="Qgh-9A-G6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kMh-6E-vRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064.8000000000002" y="472.71364317841085"/>
         </scene>
     </scenes>
     <resources>

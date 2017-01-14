@@ -15,6 +15,9 @@
 		46ACB1A81E15002D00069BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ACB1A61E15002D00069BFF /* LaunchScreen.storyboard */; };
 		46ACB1B31E15002D00069BFF /* TrulyMadlyDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACB1B21E15002D00069BFF /* TrulyMadlyDemoTests.swift */; };
 		46ACB1BE1E15002D00069BFF /* TrulyMadlyDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACB1BD1E15002D00069BFF /* TrulyMadlyDemoUITests.swift */; };
+		46D949D91E2A901A007BB641 /* TMUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D949D81E2A901A007BB641 /* TMUserProfile.swift */; };
+		46D949DB1E2A906B007BB641 /* TMMatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */; };
+		46D949DD1E2A90AF007BB641 /* TMMatchesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		46ACB1B91E15002D00069BFF /* TrulyMadlyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrulyMadlyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46ACB1BD1E15002D00069BFF /* TrulyMadlyDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrulyMadlyDemoUITests.swift; sourceTree = "<group>"; };
 		46ACB1BF1E15002D00069BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D949D81E2A901A007BB641 /* TMUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMUserProfile.swift; sourceTree = "<group>"; };
+		46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMMatchesVC.swift; sourceTree = "<group>"; };
+		46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMMatchesViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 			children = (
 				46ACB19A1E15002D00069BFF /* AppDelegate.swift */,
 				46ACB19C1E15002D00069BFF /* ViewController.swift */,
+				46D949D81E2A901A007BB641 /* TMUserProfile.swift */,
+				46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */,
+				46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */,
 				46ACB19E1E15002D00069BFF /* Main.storyboard */,
 				46ACB1A41E15002D00069BFF /* Assets.xcassets */,
 				46ACB1A61E15002D00069BFF /* LaunchScreen.storyboard */,
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D949DB1E2A906B007BB641 /* TMMatchesVC.swift in Sources */,
+				46D949DD1E2A90AF007BB641 /* TMMatchesViewCell.swift in Sources */,
 				46ACB19D1E15002D00069BFF /* ViewController.swift in Sources */,
 				46ACB1A31E15002D00069BFF /* TrulyMadlyDemo.xcdatamodeld in Sources */,
 				46ACB19B1E15002D00069BFF /* AppDelegate.swift in Sources */,
+				46D949D91E2A901A007BB641 /* TMUserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +530,7 @@
 				46ACB1C41E15002D00069BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46ACB1C51E15002D00069BFF /* Build configuration list for PBXNativeTarget "TrulyMadlyDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +539,7 @@
 				46ACB1C71E15002D00069BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46ACB1C81E15002D00069BFF /* Build configuration list for PBXNativeTarget "TrulyMadlyDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +548,7 @@
 				46ACB1CA1E15002D00069BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
