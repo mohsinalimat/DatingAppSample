@@ -159,7 +159,7 @@
                                         <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L4w-Ai-KJo" id="IHO-lT-FLr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -174,11 +174,12 @@
                             <constraint firstItem="COs-2v-szB" firstAttribute="top" secondItem="6IV-96-JXn" secondAttribute="bottom" constant="8" symbolic="YES" id="pog-Aj-qJu"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZwF-Cb-L1Y"/>
                     <navigationItem key="navigationItem" title="Profile" id="0z8-eA-k2J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsT-Fn-bij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="472.71364317841085"/>
+            <point key="canvasLocation" x="2329" y="515"/>
         </scene>
         <!--Match Found-->
         <scene sceneID="RZi-hr-zmW">
@@ -192,7 +193,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZXx-iP-1YM">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZXx-iP-1YM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
                                 <color key="backgroundColor" red="1" green="0.89614206607245184" blue="0.90466204676593232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XXh-cs-t30">
@@ -203,7 +204,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TMMatchesViewCell" id="IbE-ny-U3T" customClass="TMMatchesViewCell" customModule="TrulyMadlyDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="39" width="334" height="483"/>
+                                        <rect key="frame" x="20" y="71" width="334" height="483"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="334" height="483"/>
@@ -249,6 +250,7 @@
                             <constraint firstItem="ZXx-iP-1YM" firstAttribute="top" secondItem="kTf-XO-c5L" secondAttribute="top" id="oRW-Sd-jzw"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CSI-4N-cHz"/>
                     <navigationItem key="navigationItem" title="Match Found" id="Npu-oa-ONW"/>
                     <connections>
                         <outlet property="matchCollectionView" destination="ZXx-iP-1YM" id="dag-QH-Asg"/>
@@ -256,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8p-DY-cLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3004" y="-182.15892053973016"/>
+            <point key="canvasLocation" x="2329" y="-164"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="48d-N5-M3Q">
@@ -268,51 +270,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tzP-kw-wDq" kind="relationship" relationship="viewControllers" id="pu6-Bv-yeB"/>
-                        <segue destination="JQ5-uI-oNa" kind="relationship" relationship="viewControllers" id="E2T-38-GGc"/>
+                        <segue destination="s4B-WM-R8z" kind="relationship" relationship="viewControllers" id="a5g-oI-MNu"/>
+                        <segue destination="cdf-Fl-MH3" kind="relationship" relationship="viewControllers" id="bug-P8-7kJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvx-uv-1dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1113" y="146"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="jSF-KD-kcM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tzP-kw-wDq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="WLL-Hp-GVi"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r2b-v7-tPL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="s4B-WM-R8z" kind="relationship" relationship="rootViewController" id="cK1-OE-7zc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwu-af-VVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2064.8000000000002" y="-182.15892053973016"/>
-        </scene>
-        <!--Item 2-->
-        <scene sceneID="h8T-An-coX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JQ5-uI-oNa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="r3Q-AR-plQ"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xF2-pg-rxn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cdf-Fl-MH3" kind="relationship" relationship="rootViewController" id="Qgh-9A-G6R"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kMh-6E-vRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2064.8000000000002" y="472.71364317841085"/>
         </scene>
     </scenes>
     <resources>

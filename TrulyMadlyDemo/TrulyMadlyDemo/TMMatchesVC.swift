@@ -11,6 +11,8 @@ import UIKit
 class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var matchCollectionView: UICollectionView!
+    
+    var headerView : TMCollectionHeaderView? = nil
     let reusableIdentifier = "TMMatchesViewCell" as String
     var listArray = NSMutableArray()
     
@@ -30,6 +32,9 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
         listArray.add("one")
         listArray.add("two")
         listArray.add("three")
+        listArray.add("four")
+        listArray.add("five")
+        listArray.add("six")
         
         self.matchCollectionView.reloadData()
     }
@@ -68,5 +73,18 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
         return listArray.count
     }
     
-
+    public func collectionView(_ collectionView: UICollectionView,
+                               viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        if(kind == UICollectionElementKindSectionHeader) {
+            
+            headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader,
+                                                                         withReuseIdentifier: "collectionHeaderView", for: indexPath) as! TMCollectionHeaderView
+            
+            
+        }
+        
+        return headerView!;
+    }
+    
 }
