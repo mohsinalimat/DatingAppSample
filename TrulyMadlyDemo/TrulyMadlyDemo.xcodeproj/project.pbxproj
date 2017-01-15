@@ -19,6 +19,7 @@
 		46D949D91E2A901A007BB641 /* TMUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D949D81E2A901A007BB641 /* TMUserProfile.swift */; };
 		46D949DB1E2A906B007BB641 /* TMMatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */; };
 		46D949DD1E2A90AF007BB641 /* TMMatchesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */; };
+		46DED6271E2B98AB00915E10 /* TMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DED6261E2B98AB00915E10 /* TMDBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		46D949D81E2A901A007BB641 /* TMUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMUserProfile.swift; sourceTree = "<group>"; };
 		46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMMatchesVC.swift; sourceTree = "<group>"; };
 		46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMMatchesViewCell.swift; sourceTree = "<group>"; };
+		46DED6261E2B98AB00915E10 /* TMDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */,
 				46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */,
 				4699C2CC1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift */,
+				46DED6261E2B98AB00915E10 /* TMDBManager.swift */,
 				46ACB19E1E15002D00069BFF /* Main.storyboard */,
 				46ACB1A41E15002D00069BFF /* Assets.xcassets */,
 				46ACB1A61E15002D00069BFF /* LaunchScreen.storyboard */,
@@ -281,6 +284,7 @@
 				46ACB1A31E15002D00069BFF /* TrulyMadlyDemo.xcdatamodeld in Sources */,
 				46ACB19B1E15002D00069BFF /* AppDelegate.swift in Sources */,
 				46D949D91E2A901A007BB641 /* TMUserProfile.swift in Sources */,
+				46DED6271E2B98AB00915E10 /* TMDBManager.swift in Sources */,
 				4699C2CD1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
