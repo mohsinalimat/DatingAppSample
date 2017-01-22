@@ -78,7 +78,7 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
         
         let matchesViewCell : TMMatchesViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reusableIdentifier, for: indexPath) as! TMMatchesViewCell
         
-        let matchOb =  listArray.object(at: indexPath.row) as! TMMatches
+        let matchOb = listArray.object(at: indexPath.row) as! TMMatches
                 
         matchesViewCell.UserImageView.image = matchOb.userImage
         matchesViewCell.UserName.text = matchOb.displayName as String?
