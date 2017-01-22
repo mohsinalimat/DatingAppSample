@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		18495F8931C9436F9C53A041 /* libPods-TrulyMadlyDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrulyMadlyDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		461ED6491E35236F00162D69 /* TrulyMadlyDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrulyMadlyDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		464C95EA1E34FF3B0026E72E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4696EA1B1E34EA3600126D3D /* DB_Matches+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DB_Matches+CoreDataClass.swift"; path = "../DB_Matches+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4696EA1C1E34EA3600126D3D /* DB_Matches+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DB_Matches+CoreDataProperties.swift"; path = "../DB_Matches+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		46ACB1991E15002D00069BFF /* TrulyMadlyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				461ED6491E35236F00162D69 /* TrulyMadlyDemo-Bridging-Header.h */,
 				464C95EA1E34FF3B0026E72E /* GoogleService-Info.plist */,
 				46ACB19A1E15002D00069BFF /* AppDelegate.swift */,
 				46ACB19C1E15002D00069BFF /* ViewController.swift */,

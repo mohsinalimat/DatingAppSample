@@ -26,6 +26,14 @@
 				<string>com.googleusercontent.apps.444574655479-jb4ga1emgnk0rkbmkbmv84kr00skls0m</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>Marvel.TrulyMadlyDemo</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
