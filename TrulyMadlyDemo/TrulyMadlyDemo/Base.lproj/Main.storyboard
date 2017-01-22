@@ -125,7 +125,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <color key="backgroundColor" red="0.76124655325505453" green="0.79563305126410988" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Evh-yw-yCi">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arjun_kapoor" translatesAutoresizingMaskIntoConstraints="NO" id="Evh-yw-yCi">
                                             <rect key="frame" x="123" y="54" width="128" height="128"/>
                                             <color key="backgroundColor" red="1" green="0.84648296749843022" blue="0.79690833650579362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -290,6 +290,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arjun_kapoor" width="1024" height="768"/>
         <image name="fbloginImg" width="200" height="30"/>
         <image name="logo" width="148" height="174"/>
         <image name="wall1" width="581" height="1012"/>

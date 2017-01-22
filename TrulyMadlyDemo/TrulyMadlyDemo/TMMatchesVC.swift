@@ -16,6 +16,10 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
     let reusableIdentifier = "TMMatchesViewCell" as String
     var listArray = NSMutableArray()
     
+    //====================================================================================================================================
+    // VIEW LIFE CYCLE
+    //====================================================================================================================================
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,19 +33,31 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
         self.matchCollectionView.delegate = self
         self.matchCollectionView.dataSource = self
         
-        listArray.add("one")
-        listArray.add("two")
-        listArray.add("three")
-        listArray.add("four")
-        listArray.add("five")
-        listArray.add("six")
+        let ob1 = TMMatches()
+        ob1.displayName = "Alia Bhatt"
+        ob1.userImage = UIImage(named: "alia.jpg")
+        listArray.add(ob1)
+        
+        let ob2 = TMMatches()
+        ob2.displayName = "Deepika Padukone"
+        ob2.userImage = UIImage(named: "deepika.jpg")
+        listArray.add(ob2)
+        
+        let ob3 = TMMatches()
+        ob3.displayName = "Jacqueline Fernandez"
+        ob3.userImage = UIImage(named: "jacqueline.jpg")
+        listArray.add(ob3)
+        
+        let ob4 = TMMatches()
+        ob4.displayName = "Kriti Sanon "
+        ob4.userImage = UIImage(named: "kriti.jpg")
+        listArray.add(ob4)
         
         self.matchCollectionView.reloadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        
-
+        super.viewWillAppear(animated)
     }
     
     //====================================================================================================================================
@@ -62,8 +78,10 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
         
         let matchesViewCell : TMMatchesViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reusableIdentifier, for: indexPath) as! TMMatchesViewCell
         
-        matchesViewCell.UserImageView.image = UIImage(named: "")
-        matchesViewCell.UserName.text = listArray.object(at: indexPath.row) as? String
+        let matchOb =  listArray.object(at: indexPath.row) as! TMMatches
+                
+        matchesViewCell.UserImageView.image = matchOb.userImage
+        matchesViewCell.UserName.text = matchOb.displayName as String?
         
         return matchesViewCell
     }
@@ -79,7 +97,7 @@ class TMMatchesVC: UIViewController , UICollectionViewDelegate, UICollectionView
         if(kind == UICollectionElementKindSectionHeader) {
             
             headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader,
-                                                                         withReuseIdentifier: "collectionHeaderView", for: indexPath) as! TMCollectionHeaderView
+                                                                         withReuseIdentifier: "collectionHeaderView", for: indexPath) as? TMCollectionHeaderView
             
             
         }
