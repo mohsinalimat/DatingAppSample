@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4696EA1D1E34EA3600126D3D /* DB_Matches+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696EA1B1E34EA3600126D3D /* DB_Matches+CoreDataClass.swift */; };
+		4696EA1E1E34EA3600126D3D /* DB_Matches+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696EA1C1E34EA3600126D3D /* DB_Matches+CoreDataProperties.swift */; };
+		4696EA201E34EB0100126D3D /* TMMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696EA1F1E34EB0100126D3D /* TMMatches.swift */; };
 		4699C2CD1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4699C2CC1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift */; };
 		46ACB19B1E15002D00069BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACB19A1E15002D00069BFF /* AppDelegate.swift */; };
 		46ACB19D1E15002D00069BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACB19C1E15002D00069BFF /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4696EA1B1E34EA3600126D3D /* DB_Matches+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DB_Matches+CoreDataClass.swift"; path = "../DB_Matches+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4696EA1C1E34EA3600126D3D /* DB_Matches+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DB_Matches+CoreDataProperties.swift"; path = "../DB_Matches+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4696EA1F1E34EB0100126D3D /* TMMatches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMMatches.swift; sourceTree = "<group>"; };
 		4699C2CC1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMCollectionHeaderView.swift; sourceTree = "<group>"; };
 		46ACB1971E15002D00069BFF /* TrulyMadlyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrulyMadlyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46ACB19A1E15002D00069BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4696EA211E34EC1500126D3D /* TMDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				4696EA1B1E34EA3600126D3D /* DB_Matches+CoreDataClass.swift */,
+				4696EA1C1E34EA3600126D3D /* DB_Matches+CoreDataProperties.swift */,
+				46DED6261E2B98AB00915E10 /* TMDBManager.swift */,
+			);
+			name = TMDataBase;
+			sourceTree = "<group>";
+		};
 		46ACB18E1E15002D00069BFF = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +131,8 @@
 				46D949DC1E2A90AF007BB641 /* TMMatchesViewCell.swift */,
 				46D949DA1E2A906B007BB641 /* TMMatchesVC.swift */,
 				4699C2CC1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift */,
-				46DED6261E2B98AB00915E10 /* TMDBManager.swift */,
+				4696EA1F1E34EB0100126D3D /* TMMatches.swift */,
+				4696EA211E34EC1500126D3D /* TMDataBase */,
 				46ACB19E1E15002D00069BFF /* Main.storyboard */,
 				46ACB1A41E15002D00069BFF /* Assets.xcassets */,
 				46ACB1A61E15002D00069BFF /* LaunchScreen.storyboard */,
@@ -282,8 +299,11 @@
 				46D949DD1E2A90AF007BB641 /* TMMatchesViewCell.swift in Sources */,
 				46ACB19D1E15002D00069BFF /* ViewController.swift in Sources */,
 				46ACB1A31E15002D00069BFF /* TrulyMadlyDemo.xcdatamodeld in Sources */,
+				4696EA1D1E34EA3600126D3D /* DB_Matches+CoreDataClass.swift in Sources */,
 				46ACB19B1E15002D00069BFF /* AppDelegate.swift in Sources */,
+				4696EA201E34EB0100126D3D /* TMMatches.swift in Sources */,
 				46D949D91E2A901A007BB641 /* TMUserProfile.swift in Sources */,
+				4696EA1E1E34EA3600126D3D /* DB_Matches+CoreDataProperties.swift in Sources */,
 				46DED6271E2B98AB00915E10 /* TMDBManager.swift in Sources */,
 				4699C2CD1E2AD1BB000E5F62 /* TMCollectionHeaderView.swift in Sources */,
 			);
